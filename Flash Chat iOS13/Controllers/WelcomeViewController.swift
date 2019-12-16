@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import GoogleSignIn
 import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
@@ -18,9 +20,18 @@ class WelcomeViewController: UIViewController {
         
         titleLabel.text = "⚡️FlashChat"
         
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        // Automatically sign in the user.
+        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+
     }
     
     
+    @IBAction func GoogleSignInPressed(_ sender: GIDSignInButton) {
+        
+        performSegue(withIdentifier: "GoogleSignInToChat", sender: self)
+        
+    }
     
     
     
