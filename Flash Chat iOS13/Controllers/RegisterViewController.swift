@@ -20,11 +20,13 @@ class RegisterViewController: UIViewController {
             
             Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
                 if let err = error {
+                    
                     let uialert = UIAlertController(title: "Error",
                                                     message: err.localizedDescription,
                                                     preferredStyle: .alert)
                     uialert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(uialert, animated: true, completion: nil)
+                    
                 } else {
                     // Navigation to ChatViewController
                     self.performSegue(withIdentifier: "RegisterToChat", sender: self)
