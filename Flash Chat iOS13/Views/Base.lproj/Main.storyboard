@@ -54,9 +54,8 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="YeH-oc-NfH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOu-Bl-z38" customClass="GIDSignInButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOu-Bl-z38" customClass="GIDSignInButton">
                                 <rect key="frame" x="116" y="618" width="183" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="GoogleSignInPressed:" destination="Tim-3B-f4n" eventType="touchUpInside" id="nGj-Ws-aCz"/>
@@ -66,16 +65,20 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="IOu-Bl-z38" firstAttribute="top" secondItem="y7D-jv-BlJ" secondAttribute="bottom" constant="140" id="34E-um-bfH"/>
                             <constraint firstItem="dWe-nW-2HB" firstAttribute="trailing" secondItem="w0w-hE-MVy" secondAttribute="trailing" id="7Vx-Xq-VaO"/>
                             <constraint firstItem="dWe-nW-2HB" firstAttribute="leading" secondItem="w0w-hE-MVy" secondAttribute="leading" id="Ag7-Hh-D9X"/>
                             <constraint firstItem="y7D-jv-BlJ" firstAttribute="centerY" secondItem="H86-OM-sMN" secondAttribute="centerY" id="Ipj-e5-54T"/>
                             <constraint firstItem="dWe-nW-2HB" firstAttribute="bottom" secondItem="w0w-hE-MVy" secondAttribute="bottom" id="ZsM-5p-lNb"/>
                             <constraint firstItem="dWe-nW-2HB" firstAttribute="top" secondItem="h2x-tz-C9Y" secondAttribute="bottom" constant="8" id="cnI-Zh-aEc"/>
                             <constraint firstItem="w0w-hE-MVy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y7D-jv-BlJ" secondAttribute="trailing" id="eaW-iX-nU1"/>
+                            <constraint firstItem="w0w-hE-MVy" firstAttribute="trailing" secondItem="IOu-Bl-z38" secondAttribute="trailing" constant="115" id="hsw-Sm-Wjl"/>
                             <constraint firstItem="y7D-jv-BlJ" firstAttribute="leading" secondItem="w0w-hE-MVy" secondAttribute="leading" constant="52" id="jQ7-o7-bnG"/>
+                            <constraint firstItem="h2x-tz-C9Y" firstAttribute="top" secondItem="IOu-Bl-z38" secondAttribute="bottom" constant="8" id="oFP-jh-CpY"/>
                             <constraint firstItem="h2x-tz-C9Y" firstAttribute="trailing" secondItem="w0w-hE-MVy" secondAttribute="trailing" id="sNZ-Ul-l2q"/>
                             <constraint firstItem="h2x-tz-C9Y" firstAttribute="leading" secondItem="w0w-hE-MVy" secondAttribute="leading" id="tLN-qz-xiG"/>
                             <constraint firstItem="y7D-jv-BlJ" firstAttribute="centerX" secondItem="H86-OM-sMN" secondAttribute="centerX" id="vNd-pq-rnh"/>
+                            <constraint firstItem="IOu-Bl-z38" firstAttribute="leading" secondItem="w0w-hE-MVy" secondAttribute="leading" constant="116" id="wCB-G9-NtB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w0w-hE-MVy"/>
                     </view>
@@ -291,16 +294,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S6L-hg-cne">
                                 <rect key="frame" x="0.0" y="88" width="414" height="714"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="fAI-uC-s9a">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fAI-uC-s9a" id="X3e-Th-Y6O">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlo-0G-XA6">
                                 <rect key="frame" x="0.0" y="802" width="414" height="60"/>

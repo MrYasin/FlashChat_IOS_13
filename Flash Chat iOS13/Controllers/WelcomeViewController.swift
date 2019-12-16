@@ -18,7 +18,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleLabel.text = "⚡️FlashChat"
+        titleLabel.text = K.appName
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
         // Automatically sign in the user.
@@ -29,7 +29,7 @@ class WelcomeViewController: UIViewController {
     
     @IBAction func GoogleSignInPressed(_ sender: GIDSignInButton) {
         
-        performSegue(withIdentifier: "GoogleSignInToChat", sender: self)
+        performSegue(withIdentifier: K.googleSignIn, sender: self)
         
     }
     
