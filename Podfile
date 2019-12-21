@@ -11,5 +11,6 @@ target 'Flash Chat iOS13' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'GoogleSignIn'
+  pod 'IQKeyboardManagerSwift'
   
 end
