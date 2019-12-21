@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         //CONFIGURE FIREBASE
         FirebaseApp.configure()
+        let db = Firestore.firestore()
+        print(db)
         //GOOGLE SIGN IN DELEGATE
         GIDSignIn.sharedInstance().clientID = "998177494075-o6l569c8jolvnr8la9sctg8oflfj8cc0.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
