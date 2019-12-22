@@ -30,7 +30,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20689461042690949" green="0.50705131564934069" blue="0.54822045806243658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.50588235294117645" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="rRf-xH-Aiv" secondAttribute="trailing" constant="10" id="2xn-DT-t0Z"/>
                                     <constraint firstAttribute="bottom" secondItem="rRf-xH-Aiv" secondAttribute="bottom" constant="10" id="ATd-J1-seH"/>
@@ -48,6 +48,7 @@
                         </subviews>
                     </stackView>
                 </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="4xF-4J-lPf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="3lg-ee-nyd"/>
                     <constraint firstAttribute="bottom" secondItem="4xF-4J-lPf" secondAttribute="bottom" constant="10" id="4Qk-Ps-gIf"/>
